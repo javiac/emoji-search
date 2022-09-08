@@ -22,8 +22,9 @@ export default function App() {
         onChange={(value) => {
           setMax(value.target.value);
         }}
+        placeholder="Number of items"
       />
-      <EmojiResults emojiData={filterEmoji(searchText, max ? max : 20)} />
+      <EmojiResults emojiData={filterEmoji(searchText, max)} />
     </div>
   );
 }

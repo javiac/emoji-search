@@ -17,7 +17,11 @@ export default class SearchInput extends PureComponent {
     return (
       <div className="component-search-input">
         <div>
-          <input value={this.props.value} onChange={this.handleChange} />
+          <input
+            value={this.props.value}
+            onChange={this.handleChange}
+            placeholder="Search emoji"
+          />
         </div>
       </div>
     );
